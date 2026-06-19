@@ -1,0 +1,43 @@
+{
+  "id": "sap-learning",
+  "name": "SAP Quantum Learning",
+  "category": "education",
+  "description": "Interactive step-by-step quantum gate tutorials with real-time circuit validation and SAP branding",
+  "keywords": ["sap", "quantum", "learning", "education", "circuit", "gates", "interactive", "web"],
+
+  "entrypoint": {
+    "type": "browser",
+    "launcher": "rq_sap_learning_auto.sh"
+  },
+
+  "install": {
+    "preinstalled": false,
+    "repo_url": "https://github.com/Sameer-kulkarni-sk/rasqberry-sap-demo.git",
+    "marker_file": "package.json"
+  },
+
+  "needs_hw": {
+    "leds": false,
+    "network": false,
+    "display": "required"
+  },
+  "needs_ibm_token": "none",
+  "browser_based": true,
+  "loop_ok": false,
+  "timeout": 0,
+
+  "icon": {
+    "type": "custom",
+    "path": "/usr/share/icons/rasqberry/quantum_icon_circuit.svg"
+  },
+
+  "menu": {
+    "show": true,
+    "order": 35
+  },
+
+  "desktop": {
+    "show": true,
+    "terminal": true
+  }
+}
