@@ -1,0 +1,42 @@
+{
+  "id": "sap-led",
+  "name": "SAP Quantum LED",
+  "category": "led-demo",
+  "description": "Display SAP text on the NeoPixel LED matrix with quantum-generated color cycles",
+  "keywords": ["sap", "led", "quantum", "neopixel", "color", "display", "matrix"],
+
+  "entrypoint": {
+    "type": "python",
+    "launcher": "rq_sap_led_auto.sh"
+  },
+
+  "install": {
+    "preinstalled": false,
+    "repo_url": "https://github.com/Sameer-kulkarni-sk/SAP-IBM-Quantum-LED.git",
+    "marker_file": "scripts/deploy_to_rasqberry.sh"
+  },
+
+  "needs_hw": {
+    "leds": true,
+    "display": "none"
+  },
+  "needs_ibm_token": "prefer",
+  "browser_based": false,
+  "loop_ok": true,
+  "timeout": 30,
+
+  "icon": {
+    "type": "system",
+    "path": "video-display"
+  },
+
+  "menu": {
+    "show": true,
+    "order": 95
+  },
+
+  "desktop": {
+    "show": true,
+    "terminal": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sap-transport",
+  "name": "SAP Quantum Transportation Optimizer",
+  "category": "education",
+  "description": "Compare classical vs QAOA quantum optimization for vehicle routing with SAP TM data formats",
+  "keywords": ["sap", "quantum", "qaoa", "optimization", "transportation", "routing", "logistics"],
+
+  "entrypoint": {
+    "type": "python",
+    "command": "python3",
+    "script": "src/main.py",
+    "working_dir": "sap-transport",
+    "launcher": "rq_sap_transport_auto.sh"
+  },
+
+  "install": {
+    "preinstalled": false,
+    "repo_url": "https://github.com/Sameer-kulkarni-sk/SAP-Quantum-Transportation-Optimizer.git",
+    "marker_file": "src/main.py",
+    "pip_requirements": true
+  },
+
+  "needs_hw": {
+    "leds": false,
+    "display": "optional"
+  },
+  "needs_ibm_token": "none",
+  "browser_based": false,
+  "loop_ok": false,
+  "timeout": 120,
+
+  "icon": {
+    "type": "custom",
+    "path": "/usr/share/icons/rasqberry/quantum_icon_circuit.svg"
+  },
+
+  "menu": {
+    "show": true,
+    "order": 36
+  },
+
+  "desktop": {
+    "show": true,
+    "terminal": true
+  }
+}
