@@ -39,4 +39,4 @@ fi
 
 info "Launching SAP Quantum Transportation Optimizer..."
 cd "$DEMO_DIR"
-exec run_as_user "$VENV_DIR/bin/python3" src/main.py "$@"
+run_as_user "$VENV_DIR/bin/python3" src/main.py "$@"

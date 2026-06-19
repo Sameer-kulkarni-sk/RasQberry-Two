@@ -17,7 +17,7 @@ DEMO_NAME="SAP-IBM-Quantum-LED"
 REPO_URL="https://github.com/Sameer-kulkarni-sk/SAP-IBM-Quantum-LED.git"
 DEMO_DIR=$(get_demo_dir "$DEMO_NAME")
 MARKER="$DEMO_DIR/scripts/deploy_to_rasqberry.sh"
-MAIN_SCRIPT="$DEMO_DIR/src/main.py"
+MAIN_SCRIPT="$DEMO_DIR/src/sap_quantum_led_demo.py"
 
 if [ ! -f "$MARKER" ]; then
     info "SAP Quantum LED not found. Cloning..."
@@ -30,4 +30,5 @@ ensure_root "$@"
 
 info "Launching SAP Quantum LED..."
 cd "$DEMO_DIR"
+export PYTHONPATH="/usr/bin:${PYTHONPATH:-}"
 exec python3 "$MAIN_SCRIPT" "$@"

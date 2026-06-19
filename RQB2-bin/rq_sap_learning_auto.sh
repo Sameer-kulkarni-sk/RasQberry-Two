@@ -25,7 +25,11 @@ if [ ! -f "$MARKER" ]; then
     clone_demo "$REPO_URL" "$DEMO_DIR"
 fi
 
-require_command node || die "Node.js is required. Install with: curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs"
+if ! command -v node >/dev/null 2>&1; then
+    info "Node.js not found. Installing..."
+    curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+fi
 
 if [ ! -d "$DEMO_DIR/node_modules" ]; then
     info "Installing Node.js dependencies (this may take a few minutes)..."
