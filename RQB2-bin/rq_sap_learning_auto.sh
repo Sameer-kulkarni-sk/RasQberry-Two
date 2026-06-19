@@ -6,7 +6,7 @@
 # starts the React dev server, waits for it to be ready, then opens Chromium.
 #
 
-set -euo pipefail
+set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${SCRIPT_DIR}/rq_common.sh"
@@ -42,7 +42,8 @@ cd "$DEMO_DIR"
 run_as_user npm start --prefix "$DEMO_DIR" &
 SERVER_PID=$!
 
-setup_cleanup_trap "$SERVER_PID"
+# Clean up server on exit
+trap "kill $SERVER_PID 2>/dev/null || true" EXIT INT TERM
 
 info "Waiting for server to start..."
 for i in $(seq 1 30); do
@@ -52,6 +53,7 @@ for i in $(seq 1 30); do
     sleep 2
 done
 
+export DISPLAY="${DISPLAY:-:0}"
 open_browser "$URL"
 
 wait "$SERVER_PID"
