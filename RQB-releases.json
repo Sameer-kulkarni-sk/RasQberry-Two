@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-01T16:31:27Z",
+  "generated": "2026-06-19T05:57:47Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,14 +27,17 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-01-01-170643",
-      "name": "rasqberry-dev-demojson228-2026-01-01-170643",
-      "image_url": "https://github.com/JanLahmann/RasQberry-Two/releases/download/dev-demojson228-2026-01-01-170643/rasqberry-dev-demojson228-2026-01-01-170643.img.xz",
-      "release_url": "https://github.com/JanLahmann/RasQberry-Two/releases/tag/dev-demojson228-2026-01-01-170643",
-      "release_date": "2026-01-01 17:06",
-      "image_download_size": 1991640292,
-      "extract_size": 8841592832,
-      "extract_sha256": "813c272db48081f50684a6893ef63ad1e943a8cf1503cb371a3f9f1ecf7645b2"
+      "tag": "dev-demojson228-2026-06-19-072207",
+      "name": "rasqberry-dev-demojson228-2026-06-19-072207",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-19-072207/rasqberry-dev-demojson228-2026-06-19-072207.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-19-072207",
+      "release_date": "2026-06-19 07:22",
+      "image_download_size": 2016532408,
+      "extract_size": 8925478912,
+      "extract_sha256": "da80999cc0982c36cdf86c923a2a5c68ac0d7ede577253d853d8aad96f9ad13d",
+      "highlights": [
+        "add three SAP quantum demo manifests and launchers"
+      ]
     }
   }
 }
