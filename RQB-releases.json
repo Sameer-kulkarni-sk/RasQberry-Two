@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-19T05:57:47Z",
+  "generated": "2026-06-23T20:54:30Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,16 +27,20 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-06-19-072207",
-      "name": "rasqberry-dev-demojson228-2026-06-19-072207",
-      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-19-072207/rasqberry-dev-demojson228-2026-06-19-072207.img.xz",
-      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-19-072207",
-      "release_date": "2026-06-19 07:22",
-      "image_download_size": 2016532408,
-      "extract_size": 8925478912,
-      "extract_sha256": "da80999cc0982c36cdf86c923a2a5c68ac0d7ede577253d853d8aad96f9ad13d",
+      "tag": "dev-demojson228-2026-06-23-221647",
+      "name": "rasqberry-dev-demojson228-2026-06-23-221647",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-23-221647/rasqberry-dev-demojson228-2026-06-23-221647.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-23-221647",
+      "release_date": "2026-06-23 22:16",
+      "image_download_size": 2017639332,
+      "extract_size": 8933867520,
+      "extract_sha256": "f528870759663ddb82ce2f2bcd675fc33d4b17a48c0289b0476acb3250ebf863",
       "highlights": [
-        "add three SAP quantum demo manifests and launchers"
+        "y-flip SAP letter coordinates to match physical quad panel orientation",
+        "redraw SAP letters to match IBM coordinate style (y=0 top, verified on 4x12 quad matrix)",
+        "correct SAP letter pixel coordinates for quad 24x8 matrix (y=0 is top)",
+        "pin adafruit-circuitpython-neopixel!=6.4.2 to avoid Pi 5 neopixel_write missing module",
+        "sanitize branch name slashes in BASE_FILENAME (image finalization step)"
       ]
     }
   }
