@@ -49,41 +49,31 @@ def plotcalc(y, x, color, pixels, rainbow):
 
 def dosap(toggle):
     """Draw SAP logo: S (blue), A (gold), P (green).
-    Coordinate system: x=0-23 left→right, y=0 top, y=7 bottom (quad layout).
-    Matches IBM letter style exactly.
-
-    Grid preview (. = off):
-    y=0: SSSSSS..AAAAAA..PPPPPP..
-    y=1: S.......A....A..P....P..
-    y=2: S.......A....A..P....P..
-    y=3: SSSSSS..A....A..P....P..
-    y=4: .....S..AAAAAA..PPPPPP..
-    y=5: .....S..A....A..P.......
-    y=6: SSSSSS..A....A..P.......
-    y=7: SSSSSS..A....A..P.......
+    Letters drawn with y-flip (7-y) to match physical quad panel orientation.
+    S: col 0-5, A: col 8-13, P: col 16-21
     """
 
-    # --- Letter "S" (SAP Blue) col 0-5 ---
-    for x in range(0, 6): plotcalc(0, x, SAP_BLUE, pixels, toggle)  # top bar
-    plotcalc(1, 0, SAP_BLUE, pixels, toggle)                          # upper-left
-    plotcalc(2, 0, SAP_BLUE, pixels, toggle)                          # upper-left
-    for x in range(0, 6): plotcalc(3, x, SAP_BLUE, pixels, toggle)  # mid bar
-    plotcalc(4, 5, SAP_BLUE, pixels, toggle)                          # lower-right
-    plotcalc(5, 5, SAP_BLUE, pixels, toggle)                          # lower-right
-    for x in range(0, 6): plotcalc(6, x, SAP_BLUE, pixels, toggle)  # bottom bar
-    for x in range(0, 6): plotcalc(7, x, SAP_BLUE, pixels, toggle)  # bottom bar (double)
+    # --- Letter "S" (SAP Blue) col 0-5, y-flipped ---
+    for x in range(0, 6): plotcalc(7, x, SAP_BLUE, pixels, toggle)   # top bar    (drawn at y=7)
+    plotcalc(6, 0, SAP_BLUE, pixels, toggle)                           # upper-left (y=6)
+    plotcalc(5, 0, SAP_BLUE, pixels, toggle)                           # upper-left (y=5)
+    for x in range(0, 6): plotcalc(4, x, SAP_BLUE, pixels, toggle)   # mid bar    (y=4)
+    plotcalc(3, 5, SAP_BLUE, pixels, toggle)                           # lower-right (y=3)
+    plotcalc(2, 5, SAP_BLUE, pixels, toggle)                           # lower-right (y=2)
+    for x in range(0, 6): plotcalc(1, x, SAP_BLUE, pixels, toggle)   # bottom bar  (y=1)
+    for x in range(0, 6): plotcalc(0, x, SAP_BLUE, pixels, toggle)   # bottom bar  (y=0)
 
-    # --- Letter "A" (SAP Gold) col 8-13 ---
-    for x in range(8, 14): plotcalc(0, x, SAP_GOLD, pixels, toggle)  # top bar
-    for y in range(1, 8):  plotcalc(y, 8,  SAP_GOLD, pixels, toggle)  # left leg
-    for y in range(1, 8):  plotcalc(y, 13, SAP_GOLD, pixels, toggle)  # right leg
-    for x in range(9, 13): plotcalc(4, x, SAP_GOLD, pixels, toggle)  # crossbar
+    # --- Letter "A" (SAP Gold) col 8-13, y-flipped ---
+    for x in range(8, 14): plotcalc(7, x, SAP_GOLD, pixels, toggle)   # top bar
+    for y in range(0, 7):  plotcalc(y, 8,  SAP_GOLD, pixels, toggle)  # left leg
+    for y in range(0, 7):  plotcalc(y, 13, SAP_GOLD, pixels, toggle)  # right leg
+    for x in range(9, 13): plotcalc(3, x, SAP_GOLD, pixels, toggle)   # crossbar (y=4 flipped → y=3)
 
-    # --- Letter "P" (SAP Green) col 16-21 ---
-    for y in range(0, 8):  plotcalc(y, 16, SAP_GREEN, pixels, toggle)  # left leg
-    for x in range(17, 22): plotcalc(0, x, SAP_GREEN, pixels, toggle)  # top bar
-    for y in range(1, 4):  plotcalc(y, 21, SAP_GREEN, pixels, toggle)  # right side top half
-    for x in range(17, 22): plotcalc(4, x, SAP_GREEN, pixels, toggle)  # mid bar
+    # --- Letter "P" (SAP Green) col 16-21, y-flipped ---
+    for y in range(0, 8):  plotcalc(y, 16, SAP_GREEN, pixels, toggle)  # left leg (full)
+    for x in range(17, 22): plotcalc(7, x, SAP_GREEN, pixels, toggle)  # top bar  (y=7)
+    for y in range(4, 7):  plotcalc(y, 21, SAP_GREEN, pixels, toggle)  # right side top half
+    for x in range(17, 22): plotcalc(3, x, SAP_GREEN, pixels, toggle)  # mid bar  (y=4 flipped → y=3)
 
 
 print("Press Enter to stop...")
