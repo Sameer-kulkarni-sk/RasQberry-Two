@@ -1,34 +1,46 @@
 #!/bin/bash
-#
-# rq_sap_led_auto.sh - SAP Quantum LED Demo Launcher
-#
-# Clones SAP-IBM-Quantum-LED on first run, then executes the main LED script.
-# Requires root for GPIO/NeoPixel hardware access.
-#
+set -uo pipefail
 
-set -euo pipefail
+################################################################################
+# rq_sap_led_auto.sh - RasQberry LED SAP Demo Launcher
+#
+# Description:
+#   Simple wrapper to run the SAP-themed LED demonstration
+#   Displays SAP logo and animations on LED strip
+################################################################################
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${SCRIPT_DIR}/rq_common.sh"
 
-load_rqb2_env
-
-DEMO_NAME="SAP-IBM-Quantum-LED"
-REPO_URL="https://github.com/Sameer-kulkarni-sk/SAP-IBM-Quantum-LED.git"
-DEMO_DIR=$(get_demo_dir "$DEMO_NAME")
-MARKER="$DEMO_DIR/scripts/deploy_to_rasqberry.sh"
-MAIN_SCRIPT="$DEMO_DIR/src/sap_quantum_led_demo.py"
-
-if [ ! -f "$MARKER" ]; then
-    info "SAP Quantum LED not found. Cloning..."
-    clone_demo "$REPO_URL" "$DEMO_DIR"
-fi
-
-require_command python3
-
+# Ensure running as root (PWM/PIO drivers require GPIO access)
 ensure_root "$@"
 
-info "Launching SAP Quantum LED..."
-cd "$DEMO_DIR"
-export PYTHONPATH="/usr/bin:${PYTHONPATH:-}"
-exec python3 "$MAIN_SCRIPT" "$@"
+# Load environment and verify required variables
+load_rqb2_env
+verify_env_vars USER_HOME REPO BIN_DIR STD_VENV
+
+# Check multiple possible locations for the script
+LED_SCRIPT=""
+for location in "$BIN_DIR/neopixel_spi_SAPtestFunc.py" \
+                "/usr/bin/neopixel_spi_SAPtestFunc.py" \
+                "$USER_HOME/$REPO/RQB2-bin/neopixel_spi_SAPtestFunc.py"; do
+    if [ -f "$location" ]; then
+        LED_SCRIPT="$location"
+        break
+    fi
+done
+
+[ -n "$LED_SCRIPT" ] || die "LED demo script not found. Searched:\n  - $BIN_DIR/neopixel_spi_SAPtestFunc.py\n  - /usr/bin/neopixel_spi_SAPtestFunc.py\n  - $USER_HOME/$REPO/RQB2-bin/neopixel_spi_SAPtestFunc.py"
+
+info "Starting LED SAP Demo..."
+debug "Script location: $LED_SCRIPT"
+echo
+
+# Activate virtual environment if available
+activate_venv || warn "Virtual environment not available, continuing anyway..."
+
+# Run the script
+python3 "$LED_SCRIPT"
+
+echo
+read -p "Press Enter to close this window..."

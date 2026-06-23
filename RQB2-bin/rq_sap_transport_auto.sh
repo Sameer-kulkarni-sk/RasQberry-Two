@@ -6,7 +6,7 @@
 # dependencies, then runs the optimizer CLI in a terminal.
 #
 
-set -euo pipefail
+set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${SCRIPT_DIR}/rq_common.sh"
