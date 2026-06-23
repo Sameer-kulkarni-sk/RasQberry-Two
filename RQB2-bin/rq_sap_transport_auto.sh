@@ -6,7 +6,7 @@
 # dependencies, then runs the optimizer CLI in a terminal.
 #
 
-set -euo pipefail
+set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${SCRIPT_DIR}/rq_common.sh"
@@ -37,6 +37,7 @@ if [ -f "$DEMO_DIR/requirements.txt" ] && [ ! -f "$DEMO_DIR/.deps_installed" ]; 
     touch "$DEMO_DIR/.deps_installed"
 fi
 
-info "Launching SAP Quantum Transportation Optimizer..."
+info "Launching SAP Quantum Transportation Optimizer GUI..."
 cd "$DEMO_DIR"
-exec run_as_user "$VENV_DIR/bin/python3" src/main.py "$@"
+export DISPLAY="${DISPLAY:-:0}"
+run_as_user "$VENV_DIR/bin/python3" src/gui_main.py "$@"

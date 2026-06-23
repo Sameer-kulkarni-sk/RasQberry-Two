@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.1
+Name=SAP Quantum Learning
+Comment=Interactive step-by-step quantum gate tutorials with real-time circuit validation and SAP branding
+Icon=/usr/share/icons/rasqberry/quantum_icon_circuit.svg
+Type=Application
+Categories=RasQberry;
+Exec=/usr/bin/rq_sap_learning_auto.sh
+Terminal=true
+StartupNotify=true
+Keywords=SAP;quantum;learning;education;circuit;gates;interactive;
+X-GNOME-TextColor=#000000
+TryExec=/usr/bin/rq_sap_learning_auto.sh
+NoDisplay=false

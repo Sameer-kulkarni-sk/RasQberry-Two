@@ -6,21 +6,19 @@
   "keywords": ["sap", "led", "quantum", "neopixel", "color", "display", "matrix"],
 
   "entrypoint": {
-    "type": "python",
+    "type": "script",
     "launcher": "rq_sap_led_auto.sh"
   },
 
   "install": {
-    "preinstalled": false,
-    "repo_url": "https://github.com/Sameer-kulkarni-sk/SAP-IBM-Quantum-LED.git",
-    "marker_file": "scripts/deploy_to_rasqberry.sh"
+    "preinstalled": true
   },
 
   "needs_hw": {
     "leds": true,
     "display": "none"
   },
-  "needs_ibm_token": "prefer",
+  "needs_ibm_token": "none",
   "browser_based": false,
   "loop_ok": true,
   "timeout": 30,
