@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-01T16:31:27Z",
+  "generated": "2026-06-23T17:51:41Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,14 +27,17 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-01-01-170643",
-      "name": "rasqberry-dev-demojson228-2026-01-01-170643",
-      "image_url": "https://github.com/JanLahmann/RasQberry-Two/releases/download/dev-demojson228-2026-01-01-170643/rasqberry-dev-demojson228-2026-01-01-170643.img.xz",
-      "release_url": "https://github.com/JanLahmann/RasQberry-Two/releases/tag/dev-demojson228-2026-01-01-170643",
-      "release_date": "2026-01-01 17:06",
-      "image_download_size": 1991640292,
-      "extract_size": 8841592832,
-      "extract_sha256": "813c272db48081f50684a6893ef63ad1e943a8cf1503cb371a3f9f1ecf7645b2"
+      "tag": "feat/sap-demos-2026-06-23-192942",
+      "name": "rasqberry-feat/sap-demos-2026-06-23-192942",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/feat/sap-demos-2026-06-23-192942/rasqberry-feat-sap-demos-2026-06-23-192942.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/feat/sap-demos-2026-06-23-192942",
+      "release_date": "2026-06-23 19:29",
+      "image_download_size": 2015692100,
+      "extract_size": 8933867520,
+      "extract_sha256": "0919966893eb147045d6f4cf914aaa3268058a6ecf024b1dbdc965f06cbc1510",
+      "highlights": [
+        "sanitize branch name slashes in BASE_FILENAME (image finalization step)"
+      ]
     }
   }
 }
