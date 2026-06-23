@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-19T05:57:47Z",
+  "generated": "2026-06-23T17:51:41Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,16 +27,16 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-06-19-072207",
-      "name": "rasqberry-dev-demojson228-2026-06-19-072207",
-      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-19-072207/rasqberry-dev-demojson228-2026-06-19-072207.img.xz",
-      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-19-072207",
-      "release_date": "2026-06-19 07:22",
-      "image_download_size": 2016532408,
-      "extract_size": 8925478912,
-      "extract_sha256": "da80999cc0982c36cdf86c923a2a5c68ac0d7ede577253d853d8aad96f9ad13d",
+      "tag": "feat/sap-demos-2026-06-23-192942",
+      "name": "rasqberry-feat/sap-demos-2026-06-23-192942",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/feat/sap-demos-2026-06-23-192942/rasqberry-feat-sap-demos-2026-06-23-192942.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/feat/sap-demos-2026-06-23-192942",
+      "release_date": "2026-06-23 19:29",
+      "image_download_size": 2015692100,
+      "extract_size": 8933867520,
+      "extract_sha256": "0919966893eb147045d6f4cf914aaa3268058a6ecf024b1dbdc965f06cbc1510",
       "highlights": [
-        "add three SAP quantum demo manifests and launchers"
+        "sanitize branch name slashes in BASE_FILENAME (image finalization step)"
       ]
     }
   }
