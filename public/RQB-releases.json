@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T06:19:42Z",
+  "generated": "2026-06-24T09:58:08Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,14 +27,17 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-06-24-075247",
-      "name": "rasqberry-dev-demojson228-2026-06-24-075247",
-      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-24-075247/rasqberry-dev-demojson228-2026-06-24-075247.img.xz",
-      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-24-075247",
-      "release_date": "2026-06-24 07:52",
-      "image_download_size": 2018364112,
+      "tag": "dev-demojson228-2026-06-24-092902",
+      "name": "rasqberry-dev-demojson228-2026-06-24-092902",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-24-092902/rasqberry-dev-demojson228-2026-06-24-092902.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-24-092902",
+      "release_date": "2026-06-24 09:29",
+      "image_download_size": 2014799012,
       "extract_size": 8933867520,
-      "extract_sha256": "13c2fdb56443665dc0308b451fd5d8f21ec6362f57b70aef1664e27ca67a80d4"
+      "extract_sha256": "dd4657c64d5f1ad0b5725e3e1e212fe5472adeb8cf543b7f13f0b8402f2c6642",
+      "highlights": [
+        "pin neopixel<6.4.0 \u2014 entire 6.4.x series missing Pi5 neopixel_write backend"
+      ]
     }
   }
 }
