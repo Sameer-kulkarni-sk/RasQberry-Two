@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T10:55:29Z",
+  "generated": "2026-06-24T12:16:49Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,16 +27,16 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-06-24-122943",
-      "name": "rasqberry-dev-demojson228-2026-06-24-122943",
-      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-24-122943/rasqberry-dev-demojson228-2026-06-24-122943.img.xz",
-      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-24-122943",
-      "release_date": "2026-06-24 12:29",
-      "image_download_size": 2014971936,
+      "tag": "dev-demojson228-2026-06-24-135300",
+      "name": "rasqberry-dev-demojson228-2026-06-24-135300",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-24-135300/rasqberry-dev-demojson228-2026-06-24-135300.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-24-135300",
+      "release_date": "2026-06-24 13:53",
+      "image_download_size": 2017259556,
       "extract_size": 8933867520,
-      "extract_sha256": "7e8da4666e7d20cdd5cce6d8790f5be0b4f81e74aa2dca94430137dddac697c6",
+      "extract_sha256": "448861c6a160854ec4654b6de35ef7a1a168ebec3ee303f103f551df49feecfe",
       "highlights": [
-        "pin neopixel==6.3.11 exactly \u2014 6.3.12+ also missing Pi5 neopixel_write backend"
+        "add Adafruit-Blinka-Raspberry-Pi5-Neopixel \u2014 the actual missing package for Pi5 LED"
       ]
     }
   }
