@@ -48,7 +48,7 @@ pillow
 # Hardware integration (RasQberry-specific)
 # =============================================================================
 adafruit-blinka>=8.40.0  # Pi 5 PIO support; 8.40+ ships adafruit_raspberry_pi5_neopixel_write
-adafruit-circuitpython-neopixel>=6.3.11,<6.4.0  # 6.4.x missing Pi5 neopixel_write backend; use 6.3.x
+adafruit-circuitpython-neopixel==6.3.11  # 6.3.12+ and 6.4.x missing Pi5 neopixel_write backend
 lgpio  # Required by adafruit-blinka on Pi 5 (bcm2712 GPIO backend)
 # Note: pygobject is provided via system package symlink (see 03-install-qiskit/00-run-chroot.sh)
 netifaces  # For IP display service (08-ip-display)
