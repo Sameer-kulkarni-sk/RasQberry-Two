@@ -2,7 +2,7 @@
 Version=1.1
 Name=SAP Quantum Learning
 Comment=Interactive step-by-step quantum gate tutorials with real-time circuit validation and SAP branding
-Icon=/usr/share/icons/rasqberry/quantum_icon_circuit.svg
+Icon=/usr/share/icons/rasqberry/sap-learning-icon.png
 Type=Application
 Categories=RasQberry;
 Exec=/usr/bin/rq_sap_learning_auto.sh

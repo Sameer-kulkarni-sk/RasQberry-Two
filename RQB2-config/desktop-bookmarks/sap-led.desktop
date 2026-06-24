@@ -2,7 +2,7 @@
 Version=1.1
 Name=SAP LED Demo
 Comment=Display SAP logo on the NeoPixel LED matrix with quantum-generated color cycles
-Icon=/usr/share/icons/rasqberry/sensehat-icon.png
+Icon=/usr/share/icons/rasqberry/sap-logo.png
 Type=Application
 Categories=RasQberry;
 Exec=/usr/bin/rq_sap_led_auto.sh

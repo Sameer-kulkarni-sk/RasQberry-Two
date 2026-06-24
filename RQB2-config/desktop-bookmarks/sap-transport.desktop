@@ -2,7 +2,7 @@
 Version=1.1
 Name=SAP Quantum Transport
 Comment=Compare classical vs QAOA quantum optimization for vehicle routing with SAP TM data formats
-Icon=/usr/share/icons/rasqberry/quantum_icon_circuit.svg
+Icon=/usr/share/icons/rasqberry/sap-transport-icon.png
 Type=Application
 Categories=RasQberry;
 Exec=/usr/bin/rq_sap_transport_auto.sh
