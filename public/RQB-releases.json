@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T11:01:12Z",
+  "generated": "2026-08-25T11:03:41Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,27 +27,15 @@
       ]
     },
     "dev": {
-      "tag": "development-2026-08-25-122958",
-      "name": "rasqberry-development-2026-08-25-122958",
-      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/development-2026-08-25-122958/rasqberry-development-2026-08-25-122958.img.xz",
-      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/development-2026-08-25-122958",
+      "tag": "dev-demoux-2026-08-25-122952",
+      "name": "rasqberry-dev-demoux-2026-08-25-122952",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demoux-2026-08-25-122952/rasqberry-dev-demoux-2026-08-25-122952.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demoux-2026-08-25-122952",
       "release_date": "2026-08-25 12:29",
-      "image_download_size": 2013915316,
+      "image_download_size": 2016221212,
       "extract_size": 9009364992,
-      "extract_sha256": "92e39b39c974095c3da6030f513eae951e51d1702fbae8f12747b6e9f6f8c56d",
-      "image_sha256": "f92c76e85981e6c87df353a69bda2c0863f023a5c21a7730b41294cf1c2fea81",
-      "ab_image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/development-2026-08-25-122958/rasqberry-development-2026-08-25-122958-ab.img.xz",
-      "ab_extract_sha256": "1a597bfa904779b0a3fb1dc3b33b6847acd6783f0ec249961519b8b8d50096d6",
-      "ab_image_sha256": "a5ba80dbddd9e33417c19a854043caf6a6d7301a15558dda8cb11d872b59dcab",
-      "ab_image_download_size": 2051674656,
-      "ab_extract_size": 12398362624,
-      "highlights": [
-        "accept 64GB cards (58 GiB minimum, was 63 GiB)",
-        "three launcher bugs found while capturing screenshots",
-        "publish and use A/B checksums so A/B slot updates verify",
-        "actually show progress, and stop cutting the question",
-        "show progress instead of going silent for minutes"
-      ]
+      "extract_sha256": "9ff9c7b901bc172dd0432bfa24699b46c3e1235030fa3c42943fbc8c65bf3d5e",
+      "image_sha256": "66cd643d06db7a55fe1ca30894eb9a3b2cd8a1517c1c5d6e7e3c8ff42ffc7d72"
     }
   }
 }
