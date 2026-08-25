@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-24T12:16:49Z",
+  "generated": "2026-08-25T11:00:25Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,17 +27,15 @@
       ]
     },
     "dev": {
-      "tag": "dev-demojson228-2026-06-24-135300",
-      "name": "rasqberry-dev-demojson228-2026-06-24-135300",
-      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demojson228-2026-06-24-135300/rasqberry-dev-demojson228-2026-06-24-135300.img.xz",
-      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demojson228-2026-06-24-135300",
-      "release_date": "2026-06-24 13:53",
-      "image_download_size": 2017259556,
-      "extract_size": 8933867520,
-      "extract_sha256": "448861c6a160854ec4654b6de35ef7a1a168ebec3ee303f103f551df49feecfe",
-      "highlights": [
-        "add Adafruit-Blinka-Raspberry-Pi5-Neopixel \u2014 the actual missing package for Pi5 LED"
-      ]
+      "tag": "dev-grokfix-2026-08-25-122953",
+      "name": "rasqberry-dev-grokfix-2026-08-25-122953",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-grokfix-2026-08-25-122953/rasqberry-dev-grokfix-2026-08-25-122953.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-grokfix-2026-08-25-122953",
+      "release_date": "2026-08-25 12:29",
+      "image_download_size": 2014385200,
+      "extract_size": 9009364992,
+      "extract_sha256": "f62d0525acb2b9021802fcaf89d903d006d3babc7e7f0dca9cce7b2457264dc0",
+      "image_sha256": "7b301451735b1600d98e6c7cd194b82d9ab5a15408063a9c7f6e7d282ae5f56b"
     }
   }
 }
