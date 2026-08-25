@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T10:53:42Z",
+  "generated": "2026-08-25T11:03:41Z",
   "streams": {
     "stable": {
       "tag": null,
@@ -27,21 +27,15 @@
       ]
     },
     "dev": {
-      "tag": "dev-demoux-2026-07-17-123308",
-      "name": "rasqberry-dev-demoux-2026-07-17-123308",
-      "image_url": "https://github.com/JanLahmann/RasQberry-Two/releases/download/dev-demoux-2026-07-17-123308/rasqberry-dev-demoux-2026-07-17-123308.img.xz",
-      "release_url": "https://github.com/JanLahmann/RasQberry-Two/releases/tag/dev-demoux-2026-07-17-123308",
-      "release_date": "2026-07-17 12:33",
-      "image_download_size": 1999298456,
-      "extract_size": 8942256128,
-      "extract_sha256": "07f9df7e089f7b030ece6c610d04249297e4c39e0a2b1be47cad7b24bc0a33f7",
-      "image_sha256": "9741411779bdb725f7e870061af6fec062c932eac3cfa93bb32453a2959cd9c6",
-      "highlights": [
-        "actually show progress, and stop cutting the question",
-        "three-round identification, four candidates in one menu",
-        "Bump version to dev-demoux-2026-07-17-123308",
-        "Generate RQB-images.json and RQB-releases.json for dev release dev-demoux-2026-07-17-111947"
-      ]
+      "tag": "dev-demoux-2026-08-25-122952",
+      "name": "rasqberry-dev-demoux-2026-08-25-122952",
+      "image_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/download/dev-demoux-2026-08-25-122952/rasqberry-dev-demoux-2026-08-25-122952.img.xz",
+      "release_url": "https://github.com/Sameer-kulkarni-sk/RasQberry-Two/releases/tag/dev-demoux-2026-08-25-122952",
+      "release_date": "2026-08-25 12:29",
+      "image_download_size": 2016221212,
+      "extract_size": 9009364992,
+      "extract_sha256": "9ff9c7b901bc172dd0432bfa24699b46c3e1235030fa3c42943fbc8c65bf3d5e",
+      "image_sha256": "66cd643d06db7a55fe1ca30894eb9a3b2cd8a1517c1c5d6e7e3c8ff42ffc7d72"
     }
   }
 }
